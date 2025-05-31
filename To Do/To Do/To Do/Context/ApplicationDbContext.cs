@@ -3,9 +3,9 @@ using To_Do.Models;
 
 namespace To_Do.Context
 {
-    public class ApplicatiDbContext: DbContext
+    public class ApplicationDbContext : DbContext
     {
-        public ApplicatiDbContext(DbContextOptions<ApplicatiDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
         public DbSet<ToDo> ToDos { get; set; }
